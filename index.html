@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+     <script src="https://kit.fontawesome.com/4f06ab69fc.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="calculator1.css">
+    <title>Document</title>
+   
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+            <p class="para1">Calculator</p>
+            <p class="para2"><b>Standard</b></p>
+            <i class=" para3 fas fa-bars"></i>
+            <div id="answer_box" style=" height: 70px; width: 300px; font-size: 30px;text-align: right;overflow: hidden;white-space: nowrap; margin-top: -20px; margin-left: -5px;">
+            0</div>
+            <div id="answer" style="font-size: 30px;color: #EF2D4F; text-align: right;overflow: hidden;white-space: nowrap; margin-top: -10px;margin-left:-5px; height: 70px; width: 300px;">
+            </div>
+        </div>
+        <hr style=" border:2px solid #E7E7E7;width: 90%; margin-top: -0px;">
+        <div class="box3">
+            <div style="display: flex;" class="Box">
+                <button class="num1"  onclick="expo()" style="background-color: #333333; border:none;color: white;">%</button>
+                <button  class="delete" style="background-color: #333333; border:none;color:white">CE</button>
+                <button class="delete" style="background-color: #333333; border:none;color:white">C</button>
+                <button class="dele" style="background-color: #333333; border:none;color:white">Del</button>
+
+            </div>
+            <div style="display: flex;" class="Box">
+                <button class="num1" onclick="square()">&Sqrt;</button>
+                <button class="num1" onclick="Squareroot()">x <sup>2</sup></button>
+                <button class="num1" onclick="over()"><sup>1</sup>/x</button>
+                <button class="sign" style="background-color: #EF2D4F; border:none;color:white">/</button>
+
+            </div>
+            <div style="display: flex;" class="Box">
+                <button class="button1 num" id="class1">7</button>
+                <button class="button1 num" id="class1">8</button>
+                <button class="button1 num">9</button>
+                <button class="sign"style="background-color: #EF2D4F; border:none;color:white">*</button>
+
+            </div>
+            <div style="display: flex;" class="Box">
+                <button class="button1 num">4</button>
+                <button class="button1 num">5</button>
+                <button class="button1 num">6</button>
+                <button class="sign"style="background-color:#EF2D4F; border:none;color:white">-</button>
+
+            </div>
+            <div style="display: flex;" class="Box">
+                <button class="button1 num">1</button>
+                <button class="button1 num">2</button>
+                <button class="button1 num">3</button>
+                <button class="sign"style="background-color: #EF2D4F; border:none;color:white">+</button>
+
+            </div>
+            <div style="display: flex;" class="Box">
+                <button onclick="plusminus()" style="background-color: #E7E7E7;border:none;">+/-</button>
+                <button class="num">0</button>
+                <button class="sign" style="background-color: #E7E7E7;border:none;">.</button>
+                <button class=" equal"style="background-color: #EF2D4F; border:none;color:white">=</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="calculator1.js"></script>
+</html>
